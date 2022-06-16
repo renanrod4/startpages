@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <script type="module" src=" chrome-extension://nhlcmkojpamifcdoibofhbmpollnpmgp/ionicons/ionicons.esm.js"></script> <script nomodule="" src="chrome-extension://nhlcmkojpamifcdoibofhbmpollnpmgp/ionicons/ionicons.js"></script>
+    <title>startpage</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><ion-icon name="settings" onclick="opensettings()"></ion-icon></li>
+        </ul>
+    </header>
+    <div class="configmenu">
+        <h1>background color:</h1>
+        <input type="color" class="background">
+        <input type="button" value="confirm" class="confirm-bgcolor" onclick="confirmcolor()">
+    </div>
+    <div class="form">
+        <div class="searchengine" onclick="setengine()" ></div>
+        <input id="searchinput" type="text">
+        <button onclick="search()" ><ion-icon name="search"></ion-icon></button>
+    </div>
+    
+    <script src="js/background.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/scriptconfig.js"></script>
+
+</body>
+</html>

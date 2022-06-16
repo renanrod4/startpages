@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+div.form{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ion-icon{
+    font-size: 3pc;
+}
+input{
+    height: 3pc;
+    width: 1000px;
+    font-size: 3pc;
+}
+div.searchengine{
+    margin-right: 10px;
+    border: solid 1px #3d3d3d;
+    width: 73px;
+    height: 73px;
+}
+div.searchengine {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  div.searchengine .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 40px;
+  }
+  
+  div.searchengine .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  div.searchengine:hover .tooltiptext {
+    visibility: visible;
+  }
+  div.searchengine:hover{
+      background-color: #00000055;
+  }
+  .dropdown{
+      transition: .2s;
+  }
+  div.searchengine{
+      transition: .2s;
+  }
+  ul{
+      display: flex;
+      justify-content: end;
+      list-style: none;
+  }
+  div.configmenu, div.configmenu>*{
+      display: none;
+      
+  }
+  div.opened.configmenu >*{
+      display: block;
+  }
+  div.configmenu.opened{
+      display: block;
+      position: absolute;
+      width: 70%;
+      height: 85%;
+      background-color: white;
+      z-index: 1;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 7px 7px 10px 7px #00000053;
+  }
+  input.background{
+      width: 100px;
+  }
+input.confirm-bgcolor{
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+}

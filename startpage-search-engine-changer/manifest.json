@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "custom-startpage",
+    "short_name": "custom-startpage",
+    "version": "0.2",
+    "description": "startpage with search engine changer and you can configure it",
+    "author": "Renanrod4",
+  
+  
+    "chrome_url_overrides": {
+      "newtab": "/index.html"
+    },
+    "permissions": ["storage"]
+  }
+  
